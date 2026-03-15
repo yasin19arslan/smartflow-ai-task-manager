@@ -1,7 +1,7 @@
 # Bağımlılıklar
 node_modules/
 
-# Gizli Anahtarlar (EN KRİTİK SATIR)
+# Gizli Anahtarlar
 .env
 
 # Build dosyaları
