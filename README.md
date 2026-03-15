@@ -21,11 +21,7 @@ SmartFlow AI, klasik bir To-Do uygulamasını **Google Gemini AI** ile birleşti
 
 ## 🚀 Kurulum
 
-1. **Depoyu Klonlayın:**
-   ```bash
-   git clone [https://github.com/KULLANICI_ADIN/smartflow-app.git](https://github.com/KULLANICI_ADIN/smartflow-app.git)
-   ```
-2. **Backend Kurulumu:**
+1. **Backend Kurulumu:**
 server klasöründe .env oluşturun ve GEMINI_API_KEY değişkeninizi ekleyin.
    ```bash
    cd server
@@ -33,7 +29,7 @@ server klasöründe .env oluşturun ve GEMINI_API_KEY değişkeninizi ekleyin.
     npm run dev
    ```
 
-3. **Frontend Kurulumu:**
+2. **Frontend Kurulumu:**
 server klasöründe .env oluşturun ve GEMINI_API_KEY değişkeninizi ekleyin.
    ```bash
    cd client
@@ -41,4 +37,4 @@ server klasöründe .env oluşturun ve GEMINI_API_KEY değişkeninizi ekleyin.
     npm run dev
    ```
 
-## 👨‍🎓 Geliştirici:
+## 👨‍🎓 Geliştirici:Yasin ARSLAN
