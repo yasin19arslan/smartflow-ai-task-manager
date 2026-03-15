@@ -1,0 +1,12 @@
+# Bağımlılıklar
+node_modules/
+
+# Gizli Anahtarlar (EN KRİTİK SATIR)
+.env
+
+# Build dosyaları
+dist/
+build/
+
+# Diğer
+.DS_Store
