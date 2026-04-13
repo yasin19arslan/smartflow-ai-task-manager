@@ -2,7 +2,7 @@
 
 > MERN Stack + Google Gemini AI ile geliştirilmiş, kategori bazlı yapay zeka asistanına sahip üretkenlik uygulaması.
 
-🌐 **Canlı Demo:** 
+🌐 **Canlı Demo:** [smartflow-ai-task-manager-zkkh.vercel.app](https://smartflow-ai-task-manager-zkkh.vercel.app)
 
 
 
