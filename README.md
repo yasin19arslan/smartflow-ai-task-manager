@@ -1,40 +1,75 @@
-# 🚀 SmartFlow AI: Akıllı Görev Yönetim Sistemi
+# 🚀 SmartFlow AI — Akıllı Görev Yönetim Sistemi
 
-SmartFlow AI, klasik bir To-Do uygulamasını **Google Gemini AI** ile birleştiren, **MERN Stack** mimarisiyle geliştirilmiş akıllı bir üretkenlik asistanıdır. Kullanıcının girdiği görevleri analiz ederek kategoriye özel profesyonel tavsiyeler sunar.
+> MERN Stack + Google Gemini AI ile geliştirilmiş, kategori bazlı yapay zeka asistanına sahip üretkenlik uygulaması.
 
-## ✨ Öne Çıkan Özellikler
+🌐 **Canlı Demo:** [smartflow-demo.vercel.app]([BURAYA VERCEL LİNKİNİ YAZ])
 
-* **🧠 Kategori Bazlı AI Persona:** AI, görev kategorisine göre (İş, Ders, Hobi) farklı bir üslupla cevap verir:
-  * **İş:** Ciddi ve verimlilik odaklı teknik tavsiyeler.
-  * **Ders:** Motive edici ve akademik ipuçları.
-  * **Hobi:** Neşeli, samimi ve heyecan verici yorumlar.
-* **⚡ Gemini Flash Latest:** Google'ın en hızlı ve güncel `gemini-flash-latest` modeli kullanılarak anlık analizler yapılır.
-* **🔗 Full-Stack Senkronizasyon:** MongoDB, Express, React ve Node.js arasında kesintisiz veri akışı.
-* **🎨 Modern Arayüz:** Kullanıcı dostu modal yapısı ve dinamik öncelik yönetimi.
+![SmartFlow AI Demo]([BURAYA /screenshots/main.png YAZ])
 
-## 🛠️ Teknik Stack
+---
 
-* **Frontend:** React.js, Vite, Tailwind CSS
-* **Backend:** Node.js, Express.js
-* **Veritabanı:** MongoDB Atlas
-* **AI Entegrasyonu:** Google Generative AI REST API (Native Fetch)
+## 🎯 Ne Yapar?
+
+Kullanıcının eklediği görevi analiz eder ve görevin kategorisine göre (İş / Ders / Hobi) farklı bir AI karakteriyle akıllı tavsiyeler sunar. Sıradan bir to-do uygulamasının ötesine geçen, gerçek zamanlı AI entegrasyonlu bir üretkenlik aracıdır.
+
+---
+
+## ✨ Özellikler
+
+- 🧠 **Kategori Bazlı AI Persona** — İş, Ders ve Hobi için ayrı yapay zeka üslubu
+- ⚡ **Gemini Flash Entegrasyonu** — Google'ın en hızlı modeli ile anlık analiz
+- 📋 **Görev Öncelik Yönetimi** — Dinamik öncelik sıralama
+- 🔗 **Full-Stack Mimari** — React + Node.js + MongoDB ile uçtan uca geliştirme
+- 🎨 **Modern UI** — Tailwind CSS ile responsive tasarım
+
+---
+
+## 🛠️ Teknoloji Stack
+
+| Katman | Teknoloji |
+|--------|-----------|
+| Frontend | React.js, Vite, Tailwind CSS |
+| Backend | Node.js, Express.js, REST API |
+| Veritabanı | MongoDB Atlas |
+| AI | Google Gemini API (gemini-flash-latest) |
+| Deploy | Vercel (frontend), Render (backend) |
+
+---
 
 ## 🚀 Kurulum
 
-1. **Backend Kurulumu:**
-server klasöründe .env oluşturun ve GEMINI_API_KEY değişkeninizi ekleyin.
-   ```bash
-   cd server
-    npm install
-    npm run dev
-   ```
+### Gereksinimler
+- Node.js 18+
+- MongoDB Atlas hesabı
+- Google Gemini API Key ([buradan al](https://aistudio.google.com))
 
-2. **Frontend Kurulumu:**
-server klasöründe .env oluşturun ve GEMINI_API_KEY değişkeninizi ekleyin.
-   ```bash
-   cd client
-    npm install
-    npm run dev
-   ```
+### Backend
+```bash
+cd server
+cp .env.example .env   # .env dosyasını oluştur
+# GEMINI_API_KEY ve MONGO_URI değerlerini doldur
+npm install
+npm run dev
+```
 
-## 👨‍🎓 Geliştirici:Yasin ARSLAN
+### Frontend
+```bash
+cd client
+npm install
+npm run dev
+```
+
+---
+
+## 📸 Ekran Görüntüleri
+
+| Görev Listesi | AI Analizi |
+|---|---|
+| ![Ana Ekran](screenshots/main.png) | ![AI Modal](screenshots/ai-modal.png) |
+
+---
+
+## 👨‍💻 Geliştirici
+
+**Yasin Arslan** — Bilgisayar Mühendisi  
+📧 yasin19arslan07@gmail.com
