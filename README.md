@@ -4,13 +4,15 @@
 
 🌐 **Canlı Demo:** [smartflow-ai-task-manager-zkkh.vercel.app](https://smartflow-ai-task-manager-zkkh.vercel.app)
 
+> ⚠️ İlk yüklemede 30-50 saniye gecikme olabilir. Render ücretsiz planı kullanıldığından servis uyku moduna giriyor.
 
+![SmartFlow AI Demo](screenshots/main.png)
 
 ---
 
 ## 🎯 Ne Yapar?
 
-Kullanıcının eklediği görevi analiz eder ve görevin kategorisine göre (İş / Ders / Hobi) farklı bir AI karakteriyle akıllı tavsiyeler sunar. Sıradan bir to-do uygulamasının ötesine geçen, gerçek zamanlı AI entegrasyonlu bir üretkenlik aracıdır.
+Kullanıcının eklediği görevi analiz ederek kategorisine göre (İş / Ders / Hobi) farklı bir AI karakteriyle akıllı tavsiyeler sunar. Sıradan bir to-do uygulamasının ötesine geçen, gerçek zamanlı AI entegrasyonlu bir üretkenlik aracıdır.
 
 ---
 
@@ -46,7 +48,7 @@ Kullanıcının eklediği görevi analiz eder ve görevin kategorisine göre (İ
 ### Backend
 ```bash
 cd server
-cp .env.example .env   # .env dosyasını oluştur
+cp .env.example .env
 # GEMINI_API_KEY ve MONGO_URI değerlerini doldur
 npm install
 npm run dev
@@ -63,9 +65,9 @@ npm run dev
 
 ## 📸 Ekran Görüntüleri
 
-![SmartFlow AI Demo](screenshots/main.png)
-![SmartFlow AI Demo](screenshots/ai-modal.png)
-
+| Ana Ekran | AI Analizi |
+|-----------|------------|
+| ![Ana Ekran](screenshots/main.png) | ![AI Modal](screenshots/ai-modal.png) |
 
 ---
 
