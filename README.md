@@ -64,6 +64,7 @@ npm run dev
 ## 📸 Ekran Görüntüleri
 
 ![SmartFlow AI Demo](screenshots/main.png)
+![SmartFlow AI Demo](screenshots/ai-modal.png)
 
 
 ---
