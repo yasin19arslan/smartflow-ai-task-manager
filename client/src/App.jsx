@@ -4,6 +4,8 @@ import { LayoutDashboard, PlusCircle } from 'lucide-react'
 import TaskCard from './components/TaskCard.jsx'
 import TaskModal from './components/TaskModal.jsx'
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000'
+
 function App () {
   const [tasks, setTasks] = useState([])
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -13,49 +15,42 @@ function App () {
     priority: 'medium'
   })
 
-  
   const addTask = async e => {
     e.preventDefault()
     try {
-      const res = await axios.post(
-        'http://localhost:5000/api/tasks/add',
-        newTask
-      )
+      const res = await axios.post(`${API_URL}/api/tasks/add`, newTask)
       setTasks([...tasks, res.data])
       setIsModalOpen(false)
-      setNewTask({ title: '', description: '', priority: 'medium' }) 
+      setNewTask({ title: '', description: '', priority: 'medium' })
     } catch (err) {
       console.error('Ekleme hatası:', err)
     }
   }
-  //Görev silme kısmı
+
   const deleteTask = async id => {
     try {
-      await axios.delete(`http://localhost:5000/api/tasks/delete/${id}`)
+      await axios.delete(`${API_URL}/api/tasks/delete/${id}`)
       setTasks(tasks.filter(task => task._id !== id))
-    } catch (error) {
+    } catch (err) {
       console.error('Silme hatası:', err)
     }
   }
-  //Görev güncelleme kısmı
+
   const toggleComplete = async task => {
     try {
       const newStatus = task.status === 'completed' ? 'todo' : 'completed'
-      const res = await axios.put(
-        `http://localhost:5000/api/tasks/update/${task._id}`,
-        {
-          status: newStatus
-        }
-      )
-
+      const res = await axios.put(`${API_URL}/api/tasks/update/${task._id}`, {
+        status: newStatus
+      })
       setTasks(tasks.map(t => (t._id === task._id ? res.data : t)))
     } catch (err) {
       console.error('Güncelleme hatası:', err)
     }
   }
+
   const fetchTasks = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/tasks/all')
+      const res = await axios.get(`${API_URL}/api/tasks/all`)
       setTasks(res.data)
     } catch (err) {
       console.error('Veri çekme hatası:', err)
