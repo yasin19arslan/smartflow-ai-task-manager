@@ -6,7 +6,7 @@
 
 > ⚠️ İlk yüklemede 30-50 saniye gecikme olabilir. Render ücretsiz planı kullanıldığından servis uyku moduna giriyor.
 
-![SmartFlow AI Demo](screenshots/main.png)
+![SmartFlow AI Demo](screenshots/ai-modal.png)
 
 ---
 
@@ -65,7 +65,7 @@ npm run dev
 
 ## 📸 Ekran Görüntüleri
 
-| Ana Ekran | AI Analizi |
+| Görev Modalı | AI Analizi |
 |-----------|------------|
 | ![Ana Ekran](screenshots/main.png) | ![AI Modal](screenshots/ai-modal.png) |
 
