@@ -2,9 +2,9 @@
 
 > MERN Stack + Google Gemini AI ile geliştirilmiş, kategori bazlı yapay zeka asistanına sahip üretkenlik uygulaması.
 
-🌐 **Canlı Demo:** [smartflow-demo.vercel.app]([BURAYA VERCEL LİNKİNİ YAZ])
+🌐 **Canlı Demo:** 
 
-![SmartFlow AI Demo]([BURAYA /screenshots/main.png YAZ])
+
 
 ---
 
@@ -64,8 +64,7 @@ npm run dev
 ## 📸 Ekran Görüntüleri
 
 | Görev Listesi | AI Analizi |
-|---|---|
-| ![Ana Ekran](screenshots/main.png) | ![AI Modal](screenshots/ai-modal.png) |
+
 
 ---
 
