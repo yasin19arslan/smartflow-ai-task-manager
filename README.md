@@ -63,7 +63,7 @@ npm run dev
 
 ## 📸 Ekran Görüntüleri
 
-| Görev Listesi | AI Analizi |
+![SmartFlow AI Demo](screenshots/main.png)
 
 
 ---
